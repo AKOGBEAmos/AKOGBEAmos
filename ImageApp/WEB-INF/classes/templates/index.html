@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+   <title>Image App</title>
+</head>
+<body>
+   <h1>Welcome to Image App</h1>
+   
+   <div th:text="${demo.message}">
+       Features:
+       - Upload images securely
+       - View all uploaded images in gallery
+       - Store images in dedicated uploads directory
+       - Support for multiple image formats
+   </div>
+
+   <div>
+       <a href="/upload">Upload Image</a>
+       <a href="/">View Gallery</a>
+   </div>
+</body>
+</html>
